@@ -65,7 +65,7 @@ public class CategoryManagementAppTest {
 		assert(200 == status);
 	}
 	
-	@Test
+	/*@Test
 	@SneakyThrows
 	public void testGetCategory() {
 		MvcResult result=mvc.perform(
@@ -76,7 +76,7 @@ public class CategoryManagementAppTest {
 		int status=result.getResponse().getStatus();
 		log.info("testGetCategory response code>>"+status);
 		assert(200 == status);
-	} 
+	}*/ 
 	@Test
 	@SneakyThrows
 	public void testCategoryDelete() {
