@@ -63,3 +63,79 @@ Built an application to manage E-Commerce Fashion categories in a tree structure
 2. Commit the code and test cases to your cloned repository.
 3. DO NOT Fork this repository
 4. DO NOT raise PR to this repository
+
+### Postman Script to Test
+POST - http://localhost:8080/categories
+{
+    "type": "Men",
+    "mens": {
+        "footwear": {
+            "branded": "Branded",
+            "nonBranded": "nonBranded"
+        },
+        "tshirts": {
+            "printedTshirts": "Printed T-shirts2",
+            "causalTShirts": "Causal T-Shirts",
+            "plainTShirts": "Plain T-Shirts"
+        },
+        "shirts": {
+            "partyShirts": "Shirts",
+            "causalShirts": "Causal Shirts",
+            "plainShirts": "Plain Shirts"
+        }
+    },
+    "womens": {
+        "dress": {
+            "casualDresses": "casualDresses",
+            "partyDresses": "partyDresses"
+        },
+        "tshirts": {
+            "printedTshirts": "Printed T-shirts",
+            "causalTShirts": "Causal T-Shirts",
+            "plainTShirts": "Plain T-Shirts"
+        }
+    }
+}
+
+## Getting All Data
+GET http://localhost:8080/categories
+
+## Deleting All Data
+DELETE http://localhost:8080/categories
+
+## Delete by id
+DELETE http://localhost:8080/categories/1
+
+## Updating data by id
+PUT http://localhost:8080/categories/1
+{
+    "type": "Men",
+    "mens": {
+        "footwear": {
+            "branded": "B31",
+            "nonBranded": "NBB"
+        },
+        "tshirts": {
+            "printedTshirts": "Printed T-shirt",
+            "causalTShirts": "Causal T-Shirts",
+            "plainTShirts": "Plain T-Shirts"
+        },
+        "shirts": {
+            "partyShirts": "Shirts",
+            "causalShirts": "Causal Shirts",
+            "plainShirts": "Plain Shirts"
+        }
+    },
+    "womens": {
+        "dress": {
+            "casualDresses": "casualDresses",
+            "partyDresses": "partyDresses"
+        },
+        "tshirts": {
+            "printedTshirts": "Printed T-shirts11x2",
+            "causalTShirts": "Causal T-Shirts11x2",
+            "plainTShirts": "Plain T-Shirts11x2"
+        }
+    }
+}
+
